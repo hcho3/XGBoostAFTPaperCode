@@ -1,0 +1,5 @@
+Fold 0: C-statistics 0.9633442836471499
+Fold 1: C-statistics 0.9582289055916505
+Fold 2: C-statistics 0.9560083472371477
+Fold 3: C-statistics 0.9331456624508297
+Time elapsed = 240.987890958786

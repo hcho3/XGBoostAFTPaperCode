@@ -1,0 +1,22 @@
+name: xgboost_aft
+channels:
+- conda-forge
+- sebp
+dependencies:
+- python=3.8
+- joblib
+- six
+- future
+- scikit-survival
+- numpy
+- scipy
+- matplotlib
+- scikit-learn
+- pandas
+- seaborn
+- pip
+- wheel
+- jupyterlab
+- optuna
+- pip:
+  - xgboost
