@@ -4,10 +4,10 @@ This repository contains the data and code necessary to reproduce the experiment
 the article *Survival regression with accelerated failure time model in XGBoost*. Each directory
 (e.g. `section_3.1`) corresponds to a section in the article.
 
-# Setting up environment
+## Setting up environment
 Python 3.8+ and R 3.5.0+ are required to run the provided code.
 
-## Setting up the Python environment
+### Setting up the Python environment
 
 1. Install Miniconda from https://docs.conda.io/en/latest/miniconda.html
 2. Set up a new Conda environment by running `conda env create -f environment.yml`. It will
@@ -21,14 +21,14 @@ python setup.py install
 cd ..
 ```
 
-## Setting up the R environment
+### Setting up the R environment
 1. Ensure that you have installed R 3.5.0 or later.
 2. Install the necessary R packages:
 ```
 install.packages(c('survival', 'penaltyLearning', 'rjson', 'future', 'future.apply', 'directlabels'))
 ```
 
-# Running the experiments from Section 3.1
+## Running the experiments from Section 3.1
 ```
 conda activate xgboost_aft
 cd section_3.1
@@ -42,7 +42,7 @@ cd ..
 The synthetic datasets have already been generated for you, but if you are
 curious about how it was generated, check out `generate_interval_censored_data.py`.
 
-# Running the experiment from Section 3.2
+## Running the experiment from Section 3.2
 ```
 cd section_3.2
 ./run_right_censored_experiment.sh
@@ -50,14 +50,14 @@ python make_plot.py
 cd ..
 ```
 
-# Running the experiment from Section 3.4
+## Running the experiment from Section 3.4
 ```
 cd section_3.4
 ./gpu_experiment.sh &> log.txt
 cat log.txt
 ```
 
-# Running the experiment from Section 3.3
+## Running the experiment from Section 3.3
 The code in Section 3.3 is an adapted version of Section 3.1. It takes great
 care to run it on the cloud. Here, we can only give a sketch of what it takes to get it running on
 Amazon Web Services:

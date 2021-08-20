@@ -180,7 +180,7 @@ def main():
             KeyName='bench',
             SecurityGroups=['launch-wizard-4'],
             IamInstanceProfile={
-                'Name': 'AFTExperimentRole'
+                'Name': 'AFTWorkerRole'
             },
             MinCount=nworker,
             MaxCount=nworker,
